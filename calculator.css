@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    padding:0;
+    margin:0;
+}
+
+.calci {
+    width: 500px; /* width of overall calculator  */
+    background-color: black;
+    color:white;
+    -webkit-appearance: value;
+    -moz-appearance:    value;
+    appearance:         value;
+}
+
+.screen {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+    padding: 20px 5px; /* top right bottom left*/
+}
+/* Choose colors with high contrast 
+ Standard aa a11y(accessibility) colors
+*/
+
+.calci-button {
+    background-color: #d8d9db;
+    color: black;
+    height: 100px;
+    width: 24.5%;
+    border: None; /* eliminate border at the end of buttons */
+    border-radius:0; /* eliminate rounding at the corner of buttons */
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.calci-button:hover {
+    background-color: #ebebeb;
+}
+
+.calci-button:last-child {
+    background-color: #df974c;
+    color:white;
+}
+
+.calci-button:last-child:hover {
+    background-color: #dfb07e;
+}
+
+.calci-button:last-child:active {
+    background-color: #dd8d37;
+}
+
+/* Active stage is to see when users are pushing the buttons - will make it look darker */
+.calci-button:active {
+    background-color: #bbbcbe;
+}
+
+.twice {
+    width:49.7%
+}
+
+.thrice {
+    width:74.8%;
+}
+
+.calci-row {
+    display:flex;
+    align-content:stretch ; /* we want them to be same height */
+    justify-content: space-between; /* we want it to go to edges and have gutters in middle to recognize difference in buttons */
+    margin-bottom: 0.5%;
+}
